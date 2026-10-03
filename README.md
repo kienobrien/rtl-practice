@@ -49,3 +49,9 @@ I should be able to explain:
 - simple pipelined datapath
 
 This repository is personal practice work and will grow as I build more RTL and verification experience.
+
+## ASIC 101 with Isaac
+
+Start with [our collaboration guide](CONTRIBUTING.md), [shared setup](notes/setup.md), and [session log](notes/session-log.md). Use the lesson/lab issue template and the pull request template to share work and explanations.
+
+Course hub: [ASIC Flow Practice](https://github.com/kienobrien/asic-flow-practice). RTL exercises: [RTL Practice](https://github.com/kienobrien/rtl-practice).

@@ -23,16 +23,17 @@ module tb_counter;
         enable = 0;
         repeat (2) @(posedge clk);
 
+        @(negedge clk);
         rst = 0;
         enable = 1;
         repeat (5) @(posedge clk);
 
+        @(negedge clk);
         enable = 0;
         repeat (2) @(posedge clk);
 
         if (count !== 4'd5) begin
-            $error("Expected count=5, got %0d", count);
-            $finish;
+            $fatal(1, "Expected count=5, got %0d", count);
         end
 
         $display("PASS: counter test");
